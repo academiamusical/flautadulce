@@ -722,12 +722,26 @@
             border-radius: var(--radius-lg);
             border: 1px solid var(--border-color);
             box-shadow: var(--shadow-md);
-            overflow: hidden;
-            margin-top: 40px;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin-top: 25px;
+        }
+
+        .scroll-hint-mobile {
+            display: none;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            background-color: var(--bg-accent-light);
+            padding: 6px 14px;
+            border-radius: 50px;
+            margin: 15px auto 0 auto;
+            width: fit-content;
         }
 
         .comparison-table {
             width: 100%;
+            min-width: 640px;
             border-collapse: collapse;
             text-align: left;
         }
@@ -1078,6 +1092,8 @@
             .hero-subtitle { text-align: center; }
             .offer-card-wrapper { padding: 35px 20px; }
             .price-number { font-size: 3.8rem; }
+            .scroll-hint-mobile { display: inline-flex; align-items: center; gap: 6px; }
+            .comparison-table th, .comparison-table td { padding: 14px 12px; font-size: 0.85rem; }
         }
 
         @media (max-width: 600px) {
@@ -1494,6 +1510,8 @@
             <span class="section-tag">TABLA COMPARATIVA</span>
             <h2 class="section-title">¿Por Qué Es la Mejor Inversión Musical del Año?</h2>
             <p class="section-subtitle">Compara lo que obtienes aquí frente a cualquier otra alternativa del mercado</p>
+
+            <div class="scroll-hint-mobile"><i class="fas fa-hand-pointer"></i> Desliza horizontalmente para comparar</div>
 
             <div class="comparison-table-wrapper">
                 <table class="comparison-table">
