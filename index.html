@@ -6,13 +6,23 @@
     <title>365 Partituras de Flauta Dulce + Pistas de Acompañamiento de Audio — Colección Completa</title>
     <meta name="description" content="Obtén la colección definitiva de 365 partituras de flauta dulce en PDF con nombres de notas escritas y pistas de acompañamiento de audio. Ideal para estudiantes, profesores y familias.">
     
-    <!-- Google Fonts -->
+    <!-- Google Fonts & CDN Preconnects -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@700;800;900&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://assets.recursoweb.lat" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
+    <!-- PRELOAD CRITICAL LCP HERO IMAGE -->
+    <link rel="preload" as="image" href="https://assets.recursoweb.lat/flauta/hero.webp" fetchpriority="high">
     
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Asynchronous Non-Blocking Google Fonts -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@700;800;900&family=Russo+One&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@700;800;900&family=Russo+One&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@700;800;900&family=Russo+One&display=swap"></noscript>
+    
+    <!-- Asynchronous FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
     
     <style>
         /* ============================================================
@@ -89,6 +99,8 @@
             max-width: 100%;
             height: auto;
             display: block;
+            aspect-ratio: 1 / 1;
+            content-visibility: auto;
         }
 
         .container {
@@ -1361,10 +1373,12 @@
                 </div>
                 <h1 class="hero-title">
                     <span class="highlight-blue">365 Partituras</span> de Flauta Dulce + Pistas de Acompañamiento de Audio
-                        <!-- HERO MEDIA MOBILE (Visible en primer pantallazo móvil) -->
+                </h1>
+
+                <!-- HERO MEDIA MOBILE (Visible en primer pantallazo móvil) -->
                 <div class="hero-media-wrapper hero-media-mobile">
                     <div class="hero-main-card">
-                        <img src="https://assets.recursoweb.lat/flauta/hero.webp" alt="365 Partituras de Flauta Dulce con Tablet y Pistas de Audio">
+                        <img src="https://assets.recursoweb.lat/flauta/hero.webp" alt="365 Partituras de Flauta Dulce con Tablet y Pistas de Audio" width="600" height="600" fetchpriority="high" decoding="async">
                         <div class="floating-badge">
                             <div class="icon-box">
                                 <i class="fas fa-music"></i>
@@ -1434,7 +1448,7 @@
 
             <div class="hero-media-wrapper hero-media-desktop">
                 <div class="hero-main-card">
-                    <img src="https://assets.recursoweb.lat/flauta/hero.webp" alt="365 Partituras de Flauta Dulce con Tablet y Pistas de Audio">
+                    <img src="https://assets.recursoweb.lat/flauta/hero.webp" alt="365 Partituras de Flauta Dulce con Tablet y Pistas de Audio" width="600" height="600" loading="lazy" decoding="async">
                     <div class="floating-badge">
                         <div class="icon-box">
                             <i class="fas fa-music"></i>
@@ -1443,9 +1457,6 @@
                             <h4>Pistas de Audio <span class="tag-plus-pdf">+ PDF</span></h4>
                             <p>¡Audios de Acompañamiento!</p>
                         </div>
-                    </div>
-                </div>
-            </div>
                 </div>
             </div>
         </div>
