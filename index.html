@@ -485,6 +485,9 @@
             padding: 16px 20px;
             margin-top: 20px;
             box-shadow: var(--shadow-sm);
+            max-width: 100%;
+            box-sizing: border-box;
+            overflow: hidden;
         }
 
         .hero-audio-demo {
@@ -492,6 +495,8 @@
             margin-bottom: 20px;
             background-color: rgba(6, 182, 212, 0.06);
             border: 1.5px solid rgba(6, 182, 212, 0.3);
+            max-width: 100%;
+            box-sizing: border-box;
         }
 
         .audio-demo-title {
@@ -503,17 +508,22 @@
             display: flex;
             align-items: center;
             gap: 6px;
+            max-width: 100%;
+            word-break: break-word;
         }
 
         .audio-player-mock {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 12px;
             background-color: var(--bg-surface-subtle);
-            padding: 12px 18px;
+            padding: 10px 14px;
             border-radius: 50px;
             border: 1px solid var(--border-color);
             transition: border-color 0.3s;
+            max-width: 100%;
+            box-sizing: border-box;
+            overflow: hidden;
         }
 
         .audio-player-mock.playing {
@@ -522,15 +532,15 @@
         }
 
         .play-btn-mock {
-            width: 44px;
-            height: 44px;
+            width: 42px;
+            height: 42px;
             background-color: var(--emerald);
             color: #fff;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             cursor: pointer;
             transition: transform 0.2s, background-color 0.2s;
             flex-shrink: 0;
@@ -544,27 +554,33 @@
 
         .audio-track-info {
             flex-grow: 1;
+            min-width: 0; /* Impide que los elementos flex desborden */
             overflow: hidden;
         }
 
         .audio-track-info h5 {
-            font-size: 0.9rem;
+            font-size: 0.88rem;
             font-weight: 700;
             color: var(--text-main);
             margin: 0;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
+            max-width: 100%;
         }
 
         .audio-track-status {
             font-size: 0.75rem;
             color: var(--text-muted);
             font-weight: 600;
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         .audio-waveform {
-            height: 16px;
+            height: 14px;
             display: flex;
             align-items: center;
             gap: 3px;
