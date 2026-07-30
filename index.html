@@ -584,6 +584,21 @@
             text-overflow: ellipsis;
         }
 
+        .tag-plus-pdf {
+            display: inline-block;
+            background-color: #DC2626;
+            color: #FFFFFF;
+            font-size: 0.72rem;
+            font-weight: 900;
+            padding: 2px 7px;
+            border-radius: 4px;
+            margin-left: 6px;
+            vertical-align: middle;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 5px rgba(220, 38, 38, 0.4);
+            line-height: 1.2;
+        }
+
         .audio-waveform {
             height: 14px;
             display: flex;
@@ -1346,9 +1361,7 @@
                 </div>
                 <h1 class="hero-title">
                     <span class="highlight-blue">365 Partituras</span> de Flauta Dulce + Pistas de Acompañamiento de Audio
-                </h1>
-
-                <!-- HERO MEDIA MOBILE (Visible en primer pantallazo móvil) -->
+                        <!-- HERO MEDIA MOBILE (Visible en primer pantallazo móvil) -->
                 <div class="hero-media-wrapper hero-media-mobile">
                     <div class="hero-main-card">
                         <img src="https://assets.recursoweb.lat/flauta/hero.webp" alt="365 Partituras de Flauta Dulce con Tablet y Pistas de Audio">
@@ -1357,7 +1370,7 @@
                                 <i class="fas fa-music"></i>
                             </div>
                             <div class="badge-text">
-                                <h4>Pistas de Audio</h4>
+                                <h4>Pistas de Audio <span class="tag-plus-pdf">+ PDF</span></h4>
                                 <p>¡Audios de Acompañamiento!</p>
                             </div>
                         </div>
@@ -1400,7 +1413,7 @@
                     <div class="audio-player-mock" id="hero-player-box">
                         <div class="play-btn-mock" id="hero-play-btn" onclick="toggleDemoAudio()"><i class="fas fa-play"></i></div>
                         <div class="audio-track-info">
-                            <h5>Cielito Lindo (Pista de Acompañamiento)</h5>
+                            <h5>Cielito Lindo (Pista de Audio <span class="tag-plus-pdf">+ PDF</span>)</h5>
                             <span class="audio-track-status" id="hero-audio-status">Haz clic en Play para escuchar la pista real ▶</span>
                             <div class="audio-waveform">
                                 <div class="wave-bar"></div>
@@ -1427,10 +1440,12 @@
                             <i class="fas fa-music"></i>
                         </div>
                         <div class="badge-text">
-                            <h4>Pistas de Audio</h4>
+                            <h4>Pistas de Audio <span class="tag-plus-pdf">+ PDF</span></h4>
                             <p>¡Audios de Acompañamiento!</p>
                         </div>
                     </div>
+                </div>
+            </div>
                 </div>
             </div>
         </div>
@@ -1514,7 +1529,7 @@
                         <div class="audio-player-mock" onclick="toggleDemoAudio()" style="cursor:pointer;">
                             <div class="play-btn-mock"><i class="fas fa-play"></i></div>
                             <div class="audio-track-info">
-                                <h5>Canción 042: Cielito Lindo (Base con Acompañamiento)</h5>
+                                <h5>Canción 042: Cielito Lindo (Audio <span class="tag-plus-pdf">+ PDF</span>)</h5>
                                 <div class="audio-waveform">
                                     <div class="wave-bar"></div>
                                     <div class="wave-bar"></div>
